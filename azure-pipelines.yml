@@ -11,15 +11,11 @@ steps:
 
 - task: Maven@4 # Using Maven task version 4
   displayName: 'Maven Build with Space in POM Path'
+- task: JFrogMaven@1
   inputs:
-    mavenPomFile: 'My Maven Project With Spaces/pom.xml' # Path to the POM file, including the directory with a space
-    goals: 'package' # Maven goals, e.g., clean package, validate
-    # Options to pass to Maven, like -X for debug, can be added here
-    # options: '-X'
-    publishJUnitResults: false
+    mavenPomFile: 'my path with space/pom.xml'
+    goals: 'install'
+    artifactoryResolverService: 'andrewr-jfrog'
+    targetResolveReleaseRepo: 'farnoosh-libs-release'
+    targetResolveSnapshotRepo: 'farnoosh-libs-snapshot'
     javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.8' # Specify JDK version if needed
-    mavenVersionOption: 'Default' # Or specify a Maven version
-    mavenAuthenticateFeed: false
-    effectivePomSkip: false
-    sonarQubeRunAnalysis: false
