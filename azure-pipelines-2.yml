@@ -13,10 +13,8 @@ steps:
 - task: Maven@3
   inputs:
     mavenPomFile: 'maven/My Maven Project With Spaces/pom.xml'
-    mavenOptions: '-Xmx3072m'
+    goals: 'install'
+    artifactoryResolverService: 'andrewr-jfrog'
+    targetResolveReleaseRepo: 'farnoosh-libs-release'
+    targetResolveSnapshotRepo: 'farnoosh-libs-snapshot'
     javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.11'
-    jdkArchitectureOption: 'x64'
-    publishJUnitResults: true
-    testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'package'
