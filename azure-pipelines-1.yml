@@ -7,7 +7,7 @@ pool:
 steps:
 - task: JFrogMaven@1
   inputs:
-    mavenPomFile: 'maven-test/maven/My Maven Project With Spaces/pom.xml'
+    mavenPomFile: 'maven-test/maven/pom.xml'
     goals: 'package'
     artifactoryResolverService: 'andrewr-jfrog'
     targetResolveReleaseRepo: 'farnoosh-libs-release'
