@@ -13,7 +13,7 @@ steps:
   displayName: 'Maven Build with Space in POM Path'
 - task: JFrogMaven@1
   inputs:
-    mavenPomFile: 'mypathwithspace/pom.xml'
+    mavenPomFile: 'pom.xml'
     goals: 'install'
     artifactoryResolverService: 'andrewr-jfrog'
     targetResolveReleaseRepo: 'farnoosh-libs-release'
