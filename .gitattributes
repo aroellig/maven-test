@@ -5,3 +5,17 @@
 *.DS_Store filter=lfs diff=lfs merge=lfs -text
 *.lfsconfig filter=lfs diff=lfs merge=lfs -text
 *.txt filter=lfs diff=lfs merge=lfs -text
+*.json filter=lfs diff=lfs merge=lfs -text
+*.swp filter=lfs diff=lfs merge=lfs -text
+*.localized filter=lfs diff=lfs merge=lfs -text
+*.yaml filter=lfs diff=lfs merge=lfs -text
+*.info filter=lfs diff=lfs merge=lfs -text
+*.mod filter=lfs diff=lfs merge=lfs -text
+*.sum filter=lfs diff=lfs merge=lfs -text
+*.properties filter=lfs diff=lfs merge=lfs -text
+*.gz filter=lfs diff=lfs merge=lfs -text
+*.log filter=lfs diff=lfs merge=lfs -text
+*.tdump filter=lfs diff=lfs merge=lfs -text
+*.html filter=lfs diff=lfs merge=lfs -text
+*.go filter=lfs diff=lfs merge=lfs -text
+*.pem filter=lfs diff=lfs merge=lfs -text
